@@ -1,0 +1,4 @@
+mediapipe-model-maker
+mediapipe
+tensorflow
+opencv-python

@@ -1,0 +1,52 @@
+# =============================================================================
+# .gitignore - IA_FUAG (Pipeline de Treinamento de Gestos)
+# =============================================================================
+
+# Ambientes Virtuais (Específicos do Dispositivo / OS)
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Bytecode e Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Modelos Gerados e Checkpoints (Preservar apenas documentação e .gitkeep)
+exported_models/*.task
+exported_models/checkpoint/
+exported_models/summaries/
+exported_models/logs/
+!exported_models/README.md
+!exported_models/.gitkeep
+
+# Datasets de Imagens Locais (Preservar apenas estrutura e documentação)
+dataset/*
+!dataset/README.md
+!dataset/.gitkeep
+
+# Arquivos e Diretórios de IDEs
+.idea/
+*.swp
+*.swo
+*~
+
+# Configurações locais do VS Code (manter configurações gerais se desejado)
+.vscode/*
+!.vscode/settings.json
+
+# Arquivos de Sistema Operacional (Windows / macOS / Linux)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
